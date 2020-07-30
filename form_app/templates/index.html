@@ -2,5 +2,10 @@
 <hr>
 
 <form action="" method="POST">
+    <!-- place the form in jinja with the action and submit needed to use the form  -->
+    {% csrf_token %}
+    {{ form }}
     <input type="submit">
 </form>
+
+
